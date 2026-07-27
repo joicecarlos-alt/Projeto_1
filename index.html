@@ -1,7 +1,215 @@
-<h2></h2>
-<p>Evitar lavagens diarias, é bom usar água morna ou água fria</p>
-<p> Porque se vc laver o cabelo com a água quente ele remove a hidratação natural</p>   
-<p>Dilata as cutículas e estimula a produção exessiva  de óleo no couro cabeludo</p>
-<p>Também pode causar frizz intenço, fios ressecados,porosidade e o aumento das quedas</p>
-<h2></h2>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cuidados na Lavagem dos Cabelos</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#ff7eb3,#ff758c);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#ff4d88;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.botao{
+    display:inline-block;
+    background:#ff4d88;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+    font-size:18px;
+}
+
+.botao:hover{
+    background:#d6336c;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+#mensagem{
+    margin-top:25px;
+    color:#d6336c;
+    font-size:22px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:30px;
+}
+
+header p{
+font-size:18px;
+}
+
+.card{
+padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Cuidados na Lavagem dos Cabelos</h1>
+
+<p>Mantenha seus fios saudáveis com hábitos simples.</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Evite lavar todos os dias</h2>
+
+<p>
+Lavar o cabelo diariamente pode retirar a proteção natural dos fios.
+Sempre que possível, faça intervalos entre as lavagens conforme o seu tipo de cabelo.
 </p>
+
+</div>
+
+<div class="card">
+
+<h2>Prefira água morna ou fria</h2>
+
+<p>
+A água muito quente remove a hidratação natural dos fios e pode causar diversos problemas.
+</p>
+
+<ul>
+
+<li>Remove a oleosidade natural.</li>
+
+<li>Dilata as cutículas dos fios.</li>
+
+<li>Estimula a produção excessiva de óleo.</li>
+
+<li>Aumenta o frizz.</li>
+
+<li>Resseca os cabelos.</li>
+
+<li>Aumenta a porosidade.</li>
+
+<li>Pode contribuir para a queda dos fios.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Dica Especial</h2>
+
+<p>
+Finalize a lavagem com água fria para ajudar a selar as cutículas e deixar os cabelos mais brilhantes.
+</p>
+
+<a href="#" class="botao" onclick="mostrarMensagem()">Quero Cuidar do Meu Cabelo</a>
+
+<div id="mensagem"></div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Cuidados com os cabelos © 2026</h3>
+
+</footer>
+
+<script>
+
+function mostrarMensagem(){
+
+document.getElementById("mensagem").innerHTML =
+"✔ Parabéns! Pequenos cuidados fazem uma grande diferença para manter seus cabelos saudáveis.";
+
+}
+
+</script>
+
+</body>
+</html>
