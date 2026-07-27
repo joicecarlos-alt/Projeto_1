@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,62 +10,82 @@
 <style>
 body{
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    margin:20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    color:#e91e63;
+    text-align: center;
+    color: #e91e63;
 }
 
-div{
-    background:white;
-    padding:20px;
-    border-radius:10px;
+h2{
+    color: #444;
 }
 
-button{
-    background:#e91e63;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
+p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul{
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
 }
 </style>
 
 </head>
 <body>
 
-<div>
+<div class="container">
 
 <h1>Cuidados com o Cabelo</h1>
 
-<p>Evite lavar o cabelo todos os dias.</p>
+<h2>Lavagem</h2>
 
-<p>Prefira água morna ou fria.</p>
+<p>
+Evite lavar o cabelo todos os dias. Sempre que possível, prefira usar água morna ou fria.
+A água muito quente pode retirar a hidratação natural dos fios e prejudicar a saúde do cabelo.
+</p>
 
-<p>A água quente pode:</p>
+<h2>Problemas causados pela água quente</h2>
 
 <ul>
-    <li>Remover a hidratação natural.</li>
-    <li>Ressecar os fios.</li>
-    <li>Aumentar o frizz.</li>
-    <li>Estimular a oleosidade.</li>
+    <li>Remove a hidratação natural dos fios.</li>
+    <li>Dilata as cutículas do cabelo.</li>
+    <li>Estimula a produção excessiva de oleosidade.</li>
+    <li>Pode causar frizz intenso.</li>
+    <li>Deixa os fios ressecados.</li>
+    <li>Aumenta a porosidade.</li>
+    <li>Pode contribuir para a queda dos cabelos.</li>
 </ul>
 
-<button onclick="mensagem()">Saiba Mais</button>
+<h2>Dica</h2>
 
-<p id="texto"></p>
+<p>
+Para manter os cabelos mais saudáveis, brilhosos e macios, dê preferência à água morna ou fria durante a lavagem.
+</p>
 
 </div>
 
-<script>
-function mensagem(){
-    document.getElementById("texto").innerHTML =
-    "Use água morna ou fria para manter os cabelos mais saudáveis.";
-}
-</script>
+<footer>
+<p>Cuide dos seus cabelos todos os dias!</p>
+</footer>
 
 </body>
 </html>
